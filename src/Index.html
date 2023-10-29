@@ -1,15 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mi Página con Botón</title>
-</head>
+    <title>Api ChuckNorris</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 20%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        main {
+            text-align: center;
+            margin: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        button#generarFrase {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button#generarFrase:hover {
+            background-color: #0056b3;
+        }
+
+        #fraseAleatoriaDiv {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        #tablaCategorias {
+           height: 300px; 
+           overflow-y: scroll; 
+           display:block; 
+       }
+       a {
+        text-decoration: none; 
+        color: inherit; 
+        }
+
+    </style>
 <body>
-
-<h1>Mi Página con Botón</h1>
-
-<button id="miBoton">Haz clic</button>
-
-<script type="module" src="dist/index.js"></script>
-
+    
+    <header>
+        <img src="img/chucknorris_logo_coloured_small@2x.png" alt="Logo de la API">
+    </header>
+    <main>
+        <h1>Categorías</h1>
+        <table id="tablaCategorias">
+        </table>
+    </main>
+    
+    <section>
+        <button id="generarFrase">¡Cuéntame una hazaña de Chuck Norris!</button>
+        <div id="fraseAleatoriaDiv">Pulsa el botón para descubrir de lo que Chuck Norris es capaz.</div>
+    </section>
+    
+    <script src="/dist/index.js"></script>
 </body>
 </html>

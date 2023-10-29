@@ -1,1 +1,0 @@
-(()=>{"use strict";document.getElementById("miBoton").addEventListener("click",(function(){alert("Función desde otro archivo ejecutada.")}))})();
